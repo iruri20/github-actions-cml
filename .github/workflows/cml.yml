@@ -18,6 +18,8 @@ jobs:
         run: |
           pip install -r requirements.txt
           python train.py
+
+          # CML
           echo "## MODEL METRICS" >> report.md
           cat metrics.txt >> report.md
 
